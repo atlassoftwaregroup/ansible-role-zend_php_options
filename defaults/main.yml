@@ -1,0 +1,21 @@
+---
+# defaults file for zend-php-options
+
+php:
+  options:
+    - section: PHP
+      option: memory_limit
+      value: 128M
+      ini: /usr/local/zend/etc/php.ini
+    - section: Date
+      option: date.timezone
+      value: America/Los_Angeles
+      ini: /usr/local/zend/etc/php.ini
+    - section: mongo
+      option: extension
+      value: mongo.so
+      ini: /usr/local/zend/etc/conf.d/mongo.ini
+    - section: ssh2
+      option: extension
+      value: ssh2.so
+      ini: /usr/local/zend/etc/conf.d/ssh2.ini

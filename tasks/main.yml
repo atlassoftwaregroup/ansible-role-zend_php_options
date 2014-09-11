@@ -1,0 +1,15 @@
+---
+# tasks file for zend-php-options
+
+- name: set zend file
+  lineinfile: >
+    dest="{{ bash_dest }}"
+    line="{{ zend_bash }}"
+- name: enable options
+  ini_file:  >
+    dest={{ item.ini }}
+    section={{ item.section }}
+    option={{ item.option }}
+    value={{ item.value }}
+    backup=yes
+  with_items: php.options
