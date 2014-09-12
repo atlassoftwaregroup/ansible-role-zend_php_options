@@ -1,6 +1,5 @@
 ---
 # tasks file for zend-php-options
-
 - name: set zend file
   lineinfile: >
     dest="{{ bash_dest }}"
