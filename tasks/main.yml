@@ -1,12 +1,8 @@
 ---
-- name: set zend php
-  alternatives:
-    name: php
-    path: "{{ zend_php }}"
-# - name: set zend file
-#   lineinfile: >
-#     dest="{{ bash_dest }}"
-#     line="{{ zend_bash }}"
+- name: set zend file
+  lineinfile: >
+    dest="{{ bash_dest }}"
+    line="{{ zend_bash }}"
 - name: enable options
   ini_file:  >
     dest={{ item.ini }}
