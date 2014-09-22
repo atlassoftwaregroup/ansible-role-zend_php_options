@@ -1,9 +1,4 @@
 ---
-# defaults file for zend-php-options
-
-bash_dest: "{{ lookup('env', 'HOME') }}/.bashrc"
-zend_bash: export PATH=/usr/local/zend/bin:/usr/local/zend/mysql/bin:$PATH
-
 php:
   options:
     - section: PHP
