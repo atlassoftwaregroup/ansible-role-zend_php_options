@@ -2,7 +2,7 @@ Role Name
 =========
 [![Build Status](https://travis-ci.org/jnakatsui/ansible-role-zend_php_options.svg?branch=master)](https://travis-ci.org/jnakatsui/ansible-role-zend_php_options)
 
-Under development do not use
+Under development do not use.
 
 A brief description of the role goes here.
 
